@@ -6,13 +6,13 @@
 
 
   let colecciones = {
-    articulos: { nombre: 'string', precio: 'number' },
-    clientes: { nombre: 'string', apellidos: 'string' }
+    articulos: { nombre: 'string', precio: 'string' },
+    proveedores: { nombre: 'string', CIF: 'string' }
 };
 
 let index = `
      <div style="margin: 50px">
-         <h1>Tiendaw</h1>
+         <h1>Mercería</h1>
          <small><b>Ejemplo didáctico: PWA y Fullstack MEN (MongoDB + Express + NodeJS) </b></small>
          <br><br>
          <p>Esta SPA (Single Page Application) ofrece 3 opciones:</p>
@@ -20,7 +20,7 @@ let index = `
          <ul style="padding-left: 50px">
            <li><b>Inicio</b>: Esta página con información.</li>
            <li><b>Artículos</b>: Permite realizar operaciones CRUD sobre los artículos de la BD. </li>
-           <li><b>Clientes</b>: Permite realizar operaciones CRUD sobre los clientes de la BD.</li>
+           <li><b>Proveedores</b>: Permite realizar operaciones CRUD sobre los proveedores de la BD.</li>
          </ul>
      </div>`;
 
@@ -30,7 +30,7 @@ window.addEventListener('load', function () {
 
     let i = document.getElementById('inicio');
     let a = document.getElementById('articulos');
-    let c = document.getElementById('clientes');
+    let c = document.getElementById('proveedores');
 
     i.innerHTML = index;
     i.style.display = 'block';
@@ -48,8 +48,8 @@ window.addEventListener('load', function () {
         c.style.display = 'none';  c.innerHTML = '';       
     });
 
-    document.getElementById('menu-clientes').addEventListener('click', function (e) {
-        verDocumentos('clientes');
+    document.getElementById('menu-proveedores').addEventListener('click', function (e) {
+        verDocumentos('proveedores');
         c.style.display = 'block';
         i.style.display = 'none';  
         a.style.display = 'none';  a.innerHTML = '';

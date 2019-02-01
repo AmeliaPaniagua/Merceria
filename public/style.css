@@ -197,8 +197,8 @@
     content: " Artículos"; 
   }
   
-  label#menu-clientes-label > span::after {
-    content: " Clientes"; 
+  label#menu-proveedores-label > span::after {
+    content: " Proveedores"; 
   }
   
   
@@ -276,8 +276,8 @@
   
   .sort-table th.articulos-nombre,
   .sort-table th.articulos-precio,
-  .sort-table th.clientes-nombre,
-  .sort-table th.clientes-apellidos
+  .sort-table th.proveedores-nombre,
+  .sort-table th.proveedores-apellidos
    {
     width: 30% !important;
   }
@@ -287,13 +287,13 @@
   }
   
   .sort-table .articulos-nombre,
-  .sort-table .clientes-nombre  
+  .sort-table .proveedores-nombre  
   {
     font-weight: bold;
   }
   
   .sort-table .articulos-nombre small,
-  .sort-table .clientes-nombre small {
+  .sort-table .proveedores-nombre small {
     font-weight: normal;
   }
   
@@ -302,7 +302,7 @@
   @media (max-width: 767px) {
     label#menu-inicio-label    > span::after,
     label#menu-articulos-label > span::after,
-    label#menu-clientes-label  > span::after 
+    label#menu-proveedores-label  > span::after 
     {
       content: none; 
     }
@@ -397,27 +397,27 @@
   
     .sort-table th.articulos-nombre,
     .sort-table th.articulos-precio,
-    .sort-table th.clientes-nombre,
-    .sort-table th.clientes-apellidos,
+    .sort-table th.proveedores-nombre,
+    .sort-table th.proveedores-apellidos,
     .sort-table th.operacion {
       width: 100px !important;
     }
   
     .sort-table td.articulos-nombre:before,
-    .sort-table td.clientes-nombre:before
+    .sort-table td.proveedores-nombre:before
     {
       display: none;
     }
   
     .sort-table td.articulos-nombre,
-    .sort-table td.clientes-nombre
+    .sort-table td.proveedores-nombre
     {
       letter-spacing: .03em;
       padding-left: 14px;
     }
   
     .sort-table td.articulos-nombre > input 
-    .sort-table td.clientes-nombre > input
+    .sort-table td.proveedores-nombre > input
     {
       font-weight:bold;
     }
