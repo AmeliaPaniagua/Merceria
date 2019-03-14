@@ -13,6 +13,15 @@ mongoose.connect(config.db_uri, { useNewUrlParser: true })
   .catch(err => console.log ('Error en la conexión a la BD'));
 
 // --- MIDDLEWARE
+// Para redirigir trafico HTTP a HTTPS
+app.use((req, res, next) => {
+  if (req.header('x-forwarded-proto') !== 'https' && process.env.PORT)
+    res.redirect("https://${req.header('host')}${req.url}");
+  else
+    next();
+});
+
+
 // Archivos estáticos. Deberás crear un archivo public/index.html para ver el resultado
 app.use(express.static(path.join(__dirname , 'public')));
 // Logger
