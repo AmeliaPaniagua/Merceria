@@ -127,9 +127,12 @@ Para instalar en el escritorio a través del navegador Chrome, seguimos los sigu
   ![4](img/4.png)
   
   
-  ## Desinstalacción en PC o Portátil
+  
+  ## Desinstalación en PC o Portátil
   Por último, si deseamos desinstalar la aplicación, bastará con pulsar en el menú de la ventana y luego en Desinstalar ...
   
   ![5](img/5.png)
+  
+  
   
   ![6](img/6.png)
