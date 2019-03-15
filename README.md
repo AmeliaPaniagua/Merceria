@@ -11,11 +11,11 @@ Se utilizan los mínimos recursos (ya sean estos paquetes, librerías o framewor
 
 La interfaz está desarrollada en forma de SPA (Single Page Application).
 
-![Inicio](img/tiendaw-inicioMerceria.png)
+![Inicio](img/inicioMerceria.png)
 
-![Artículos](img/tiendaw-articulosMerceria.png)
+![Artículos](img/articulosMerceria.png)
 
-![Proveedores](img/tiendaw-proveedoresMerceria.png)
+![Proveedores](img/proveedoresMerceria.png)
 
 Los archivos utilizados son los siguientes:
 
